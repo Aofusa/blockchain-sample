@@ -1,0 +1,29 @@
+[package]
+name = "blockchain"
+version = "0.1.0"
+authors = ["Aofusa <5000enPCinAOFUSA@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+anyhow = "1.0"
+thiserror = "1.0"
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+ring = "0.16"
+chrono = { version = "0.4", features = ["serde"] }
+
+[[bin]]
+name="v1"
+path="src/v1.rs"
+
+[[bin]]
+name="v2"
+path="src/v2.rs"
+
+[[bin]]
+name="v3"
+path="src/v3.rs"
+
+[[bin]]
+name="v4"
+path="src/v4.rs"
